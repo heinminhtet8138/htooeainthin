@@ -1,0 +1,36 @@
+/* For Nav Text animation */
+.waviy {
+    position: relative;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+
+
+  /* Fonts */
+
+  @font-face {
+    font-family: pangram;
+    src: url('fonts/Pangram.ttf');
+ }
+
+ *{
+    font-family: pangram;
+ }
+
+ /* Divider */
+
+hr.divider{
+	max-width: 5.25rem;
+	border-width: 0.2rem;
+	border-color: green;
+}
